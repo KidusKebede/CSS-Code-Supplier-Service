@@ -149,7 +149,7 @@ public class CodeSupplierService implements ICodeSupplierService{
         }
         else {
             for (String topic : topics) {
-                if (!topic.matches("^(DS_\\d+)|(CDS_\\d+)|(SI_\\d+_\\d+)|(NSI_\\d+_\\d+)$")) {
+                if (!topic.matches("^(DS_\\d+)|(CDS_\\d+)|(SS_\\d+_\\d+)|(NSI_\\d+_\\d+)$")) {
                     isValid = false;
                     break;
                 }
