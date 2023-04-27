@@ -8,13 +8,13 @@ import java.io.File;
 @Component
 public class WorkDirCreator implements IWorkDirCreator {
 
-    @Value("${zipDir1}")
+    @Value("${zipDir}")
     private String zipDir;
 
-    @Value("${codeDir1}")
+    @Value("${codeDir}")
     private String codeDir;
 
-    @Value("${zipOutDir1}")
+    @Value("${zipOutDir}")
     private String zipOutDir;
 
     private void createDirIfNotExists(String dir) {

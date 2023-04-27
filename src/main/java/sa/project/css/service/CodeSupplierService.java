@@ -18,36 +18,34 @@ import java.nio.channels.ReadableByteChannel;
 public class CodeSupplierService implements ICodeSupplierService{
 
     private final IZipper zipper;
-
-    @Value("${css.cds.src1}")
-    private String cdsSrc;
-
-    @Value("${css.ss.src1}")
+     @Value("${css.cds.src}")
+     private String cdsSrc;
+    @Value("${css.ss.src}")
     private String ssSrc;
 
-    @Value("${css.dis.src1}")
+    @Value("${css.dis.src}")
     private String disSrc;
 
 
-    @Value("${css.rs.src1}")
+    @Value("${css.rs.src}")
     private String rsSrc;
 
-    @Value("${zipDir1}")
+    @Value("${zipDir}")
     private String zipDir;
 
-    @Value("${codeDir1}")
+    @Value("${codeDir}")
     private String codeDir;
 
-    @Value("${zipOutDir1}")
+    @Value("${zipOutDir}")
     private String zipOutDir;
 
-    @Value("${css.cds.projectName1}")
+    @Value("${css.cds.projectName}")
     private String cdsProjectName;
 
-    @Value("${css.ss.projectName1}")
+    @Value("${css.ss.projectName}")
     private String ssProjectName;
 
-    @Value("${css.dis.projectName1}")
+    @Value("${css.dis.projectName}")
     private String disProjectName;
     private final static String APPLICATION_YML_REL_PATH = "/src/main/resources/application.yml";
     private final static int FILE_READ_CHAR_BUFFER_SIZE = 10;
